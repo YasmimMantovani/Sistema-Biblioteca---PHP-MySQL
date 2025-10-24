@@ -38,12 +38,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Cadastro de Livros</title>
 </head>
 <body>
-    <!--http://localhost/SistemaBiblioteca/PHP/inserir_livro.php link para acessar-->
+    <div class="header"><h2>Cadastro de Livros</h2></div>
     <div class="container">
-        <div class="header">
-            <h2>Cadastro de Livros</h2>
-        </div>
-
         <div class="formulario">
             <?php if (!empty($mensagem)): ?>
                 <div class="mensagem"><?= $mensagem ?></div>
