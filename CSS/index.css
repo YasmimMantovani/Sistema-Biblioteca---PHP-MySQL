@@ -1,32 +1,42 @@
+@import url('https://fonts.cdnfonts.com/css/ranade');
+
 body{
     margin: 0 auto;
     display: flex;
+    background: url("../img/kikisDream.gif") no-repeat center center fixed;
+    font-family: 'Poppins', sans-serif;
+    color:#fff;
+    overflow-x: hidden;
 }
 
 .container{
     width: 100%;
     margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: ranade;
 }
 
 .content {
-    background-color: rgb(236, 152, 152);
+    background: rgba(182, 115, 115, 0.514);
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 30px 50px;
     margin: auto;
-    margin-top: 45px;
+    margin-top: 20px;
     border-radius: 15px;
     max-width: 450px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-    font-family: Arial, sans-serif;
+    font-family: ranade;
 }
 
 .header{
-    background-color:rgb(236, 152, 152);
+    background: rgba(182, 115, 115, 0.514);
     color: white;
     padding: 5px;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: ranade;
     width: 100%;
     margin: 0 auto;
 }

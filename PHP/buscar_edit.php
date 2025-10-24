@@ -28,7 +28,7 @@ if (isset($_GET["titulo"])) {
             <label for="id_livro">Digite o código do livro:</label>
             <input type="number" id="id_livro" name="id_livro" required placeholder="Ex: 1">
 
-            <input type="submit" class="btn" value="Buscar">
+            <button type="submit" class="btn" value="Buscar">Buscar</button>
             <a href="../HTML/index.html" class="btn">Voltar</a>
         </form>
     </div>

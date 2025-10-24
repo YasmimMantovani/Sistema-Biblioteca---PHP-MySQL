@@ -86,7 +86,7 @@ $conexao->close();
                 </div>
 
                 <div class="botao">
-                    <input type="submit" class="btn" value="Salvar Alterações">
+                    <button type="submit" class="btn" value="Salvar Alterações">Salvar Alterações</button>
                     <a href="../HTML/index.html" class="btn">Voltar</a>
                 </div>
             </form>

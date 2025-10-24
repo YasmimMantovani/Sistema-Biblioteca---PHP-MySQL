@@ -65,7 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
 
                 <div class="botao">
-                    <input type="submit" class="btn" value="Cadastrar">
+                    <button type="submit" class="btn" value="Cadastrar">Cadastrar</button>
                     <a href="../HTML/index.html" class="btn">Voltar</a>
                 </div>
             </form>

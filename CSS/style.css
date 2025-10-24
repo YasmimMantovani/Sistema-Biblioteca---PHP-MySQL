@@ -1,6 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/ranade');
+
 body{
     margin: 0 auto;
     display: flex;
+    background: url("../img/kikisDream.gif") no-repeat center center fixed;
 }
 
 .container{
@@ -18,19 +21,19 @@ body{
     border-radius: 15px;
     max-width: 450px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-    font-family: Arial, sans-serif;
+    font-family: ranade;
 }
 
 .header{
-    background-color:rgb(236, 152, 152);
+    background: rgba(182, 115, 115, 0.514);
     color: white;
     padding: 5px;
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: ranade;
 }
 
 .formulario{
-    background-color: rgb(236, 152, 152);
+    background: rgba(182, 115, 115, 0.514);
     color: white;
     padding: 20px;
     margin: auto;
@@ -38,7 +41,7 @@ body{
     border-radius: 15px;
     max-width: 400px; /* limita a largura */
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-    font-family: Arial, sans-serif;
+    font-family: ranade;
     }
 
 .labels{
@@ -62,7 +65,8 @@ input[type="number"] {
     transition: 0.3s;
 }
 
-.btn{
+button.btn,
+a.btn {
     display: inline-block;
     padding: 10px;
     margin-top: 10px;
@@ -75,9 +79,11 @@ input[type="number"] {
     border: none;
     cursor: pointer;
     text-align: center;
+    font-family: ranade;
 }
 
-.btn:hover, .btn:focus{
+button.btn:hover, button.btn:focus,
+a.btn:hover, a.btn:focus{
     background-color: #e63946;
     transform: scale(1.1);
 }
