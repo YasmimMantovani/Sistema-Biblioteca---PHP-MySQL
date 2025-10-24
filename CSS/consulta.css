@@ -23,13 +23,17 @@ body {
     background: rgba(182, 115, 115, 0.514);
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 40px;
     margin: 0 auto;
     margin-top: 45px;
     border-radius: 15px;
     max-width: 450px;
     box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
     font-family: ranade;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
 }
 
 .labels {
@@ -44,7 +48,8 @@ label {
     margin-top: -10px;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="number"] {
     padding: 10px;
     border: 1px solid #aaa;
     border-radius: 10px;
@@ -52,20 +57,26 @@ input[type="text"] {
     transition: 0.3s;
 }
 
-.btn {
+.botao {
     display: flex;
     justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
     align-items: center;
-    padding: 10px;
-    margin: auto;
+    padding: 10px 20px;
     background-color: #ec7373; /* cor principal */
     color: white;
     text-decoration: none;
     border-radius: 8px;
-    transition: 0.3s;
+    transition: all 0.3s ease;
     border: none;
     cursor: pointer;
     text-align: center;
+    font-family: ranade;
+    justify-content: center;
 }
 
 .btn:hover{

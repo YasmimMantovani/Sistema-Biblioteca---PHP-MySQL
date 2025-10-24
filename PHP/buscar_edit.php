@@ -16,21 +16,26 @@ if (isset($_GET["titulo"])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/consulta.css">
     <title>Buscar Livro</title>
 
 </head>
 
 <body>
-    <div class="formulario">
-        <h2>Buscar Livro para Edição</h2>
-        <form action="editar.php" method="get">
-            <label for="id_livro">Digite o código do livro:</label>
-            <input type="number" id="id_livro" name="id_livro" required placeholder="Ex: 1">
+    <div class="container">
+        <div class="header"><h2>Buscar Livro</h2></div>
+        <div class="content">
+            <form action="editar.php" method="get">
+                <label for="id_livro">Digite o código do livro:</label>
+                <input type="number" id="id_livro" name="id_livro" required placeholder="Ex: 1">
+                <br><br>
 
-            <button type="submit" class="btn" value="Buscar">Buscar</button>
-            <a href="../HTML/index.html" class="btn">Voltar</a>
-        </form>
+                <div class="botao">
+                    <button type="submit" class="btn" value="Buscar">Buscar</button>
+                    <a href="../HTML/index.html" class="btn">Voltar</a>
+                </div>
+            </form>              
+        </div>
     </div>
 </body>
 </html>

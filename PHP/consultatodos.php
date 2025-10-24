@@ -14,10 +14,8 @@ $resultado = $conexao->query($sql);
     <title>Livros Cadastrados</title>
 </head>
 <body>
+    <div class="header"><h2>Livros Cadastrados</h2></div>
     <div class="container">
-        <div class="header">
-            <h2>Livros Cadastrados</h2>
-        </div>
         <table border="1">
             <tr>
                 <th>ID</th>
