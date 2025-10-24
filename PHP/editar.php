@@ -54,14 +54,12 @@ $conexao->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../img/pngegg.png">
     <title>Editar Livros</title>
 </head>
 <body>
+    <div class="header"><h2>Editar Livros</h2></div>
     <div class="container">
-        <div class="header">
-            <h2>Editar Livros</h2>
-        </div>
-
         <div class="formulario">
             <?php if (!empty($mensagem)): ?>
                 <div class="mensagem"><?= $mensagem ?></div>

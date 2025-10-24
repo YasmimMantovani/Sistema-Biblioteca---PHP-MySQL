@@ -18,6 +18,7 @@ if(isset($_GET["titulo"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/consulta.css">
+    <link rel="shortcut icon" href="../img/pngegg.png">
     <title>Buscar livro para consulta</title>
 </head>
 <body>
