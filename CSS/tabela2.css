@@ -28,6 +28,7 @@ table {
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   color:white;
   border-radius: 15px;
+  overflow-x: auto;
 }
 
 th, td {
@@ -42,18 +43,6 @@ th {
 
 tr {
   background-color: rgba(182, 115, 115, 0.514);
-}
-
-
-.header{
-    width: 100%;
-    background: rgba(182, 115, 115, 0.514);
-    color: white;
-    padding: 5px;
-    text-align: center;
-    font-family: ranade;
-    margin: 0 auto;
-    
 }
 
 .botao {

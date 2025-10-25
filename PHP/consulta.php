@@ -15,9 +15,8 @@ $mensagem = "";
   <title>Resultado da Consulta</title>
 </head>
 <body>
-    <div class="header"><h2>Resultado da consulta</h2></div>
     <div class="container">
-        <div class="content">
+        <div class="content">             
             <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     //pega o titulo

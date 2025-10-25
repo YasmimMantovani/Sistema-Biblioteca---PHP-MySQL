@@ -4,30 +4,28 @@ body {
       font-family: ranade;
       background-color: #fafafa;
       margin: 0 auto;
-      display: flex;
       background: url("../img/kikisDream.gif") no-repeat center center fixed;
+      display: flex;
     }
 
 .container{
     width: 100%;
-    margin: 0 auto;
+    margin: 80px auto;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-family: ranade;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    position: relative;
 }
 
 table {
   border-collapse: collapse;
-  width: 80%;
+  width: 70%;
   margin: 20px auto;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   color:white;
   border-radius: 15px;
+  overflow-x: auto;
 }
 
 th, td {
@@ -44,24 +42,18 @@ tr {
   background-color: rgba(182, 115, 115, 0.514);
 }
 
-
-.header{
-    width: 100%;
-    background: rgba(182, 115, 115, 0.514);
-    color: white;
-    padding: 5px;
-    text-align: center;
-    font-family: ranade;
-    margin: 0 auto;
-    
+.botao {
+  justify-content: center;
+  gap: 10px;
+  display: flex;
+  margin-top: 15px;
+  font-family: ranade;
 }
 
 .btn{
     display: flex;
     align-items: center;
-    justify-content: center;
-    max-width: 50px;
-    padding: 10px;
+    padding: 10px 15px;
     margin: auto;
     background-color: #ec7373; /* cor principal */
     color: white;
@@ -71,6 +63,7 @@ tr {
     border: none;
     cursor: pointer;
     text-align: center;
+    font-family: ranade;
 }
 
 .btn:hover{

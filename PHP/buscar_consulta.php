@@ -1,6 +1,8 @@
 <?php 
 include("conexao.php");
 
+$mensagem = "";
+
 if(isset($_GET["titulo"])) {
     $titulo = $_GET["titulo"];
 
@@ -23,8 +25,11 @@ if(isset($_GET["titulo"])) {
 </head>
 <body>
     <div class="container">
-        <div class="header"><h2>Consulta (individual)</h2></div>
         <div class="content">
+            <?php if (!empty($mensagem)): ?>
+                <div class="mensagem"><?= $mensagem ?></div>
+            <?php endif; ?>
+            <h2>Busque um livro para consultar</h2>
             <form action="consulta.php" method="post">
                 <label for="titulo">Título:</label>
                 <input type="text" name="titulo" id="titulo" placeholder="Insira o título" required>

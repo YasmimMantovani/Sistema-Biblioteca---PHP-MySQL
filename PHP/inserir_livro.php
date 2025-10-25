@@ -39,13 +39,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Cadastro de Livros</title>
 </head>
 <body>
-    <div class="header"><h2>Cadastro de Livros</h2></div>
     <div class="container">
         <div class="formulario">
             <?php if (!empty($mensagem)): ?>
                 <div class="mensagem"><?= $mensagem ?></div>
             <?php endif; ?>
-
+            <h2>Cadastre um livro</h2>
             <form action="inserir_livro.php" method="post">
                 <div class="labels">
                     <label>Título:</label><br>

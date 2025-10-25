@@ -58,13 +58,12 @@ $conexao->close();
     <title>Editar Livros</title>
 </head>
 <body>
-    <div class="header"><h2>Editar Livros</h2></div>
     <div class="container">
         <div class="formulario">
             <?php if (!empty($mensagem)): ?>
                 <div class="mensagem"><?= $mensagem ?></div>
             <?php endif; ?>
-            
+            <h2>Editar Livro</h2>
             <?php if (isset($livro)): ?>
             <form action="editar.php" method="post">
                 <div class="labels">

@@ -3,6 +3,7 @@ include("conexao.php");
 
 $sql = "select * from livros";
 $resultado = $conexao->query($sql);
+
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +16,6 @@ $resultado = $conexao->query($sql);
     <title>Livros Cadastrados</title>
 </head>
 <body>
-    <div class="header"><h2>Livros Cadastrados</h2></div>
     <div class="container">
         <table border="1">
             <tr>
@@ -24,6 +24,7 @@ $resultado = $conexao->query($sql);
                 <th>Autor</th>
                 <th>Ano de Publicação</th>
                 <th>Gênero</th>
+                <th>Ações</th>
             </tr>
 
             <?php
@@ -34,6 +35,20 @@ $resultado = $conexao->query($sql);
                 echo "<td>" . $linha['autor'] . "</td>";
                 echo "<td>" . $linha['ano_publicacao'] . "</td>";
                 echo "<td>" . $linha['genero'] . "</td>";
+                echo "<td>
+                        <form method='post' action='excluir.php'>
+                        <input type='hidden' name='id_livro' value='" . $linha["id_livro"]. "'>
+                        <div class='botao'>
+                            <button type='submit' class='btn'>Excluir</button>
+                        </div>
+                        </form>
+                        
+                        <form method='get' action='editar.php'>
+                        <input type='hidden' name='id_livro' value='" . $linha["id_livro"]. "'>
+                        <div class='botao'>
+                            <button type='submit' class='btn'>Editar</button>
+                        </div>
+                        </form>";
                 echo "</tr>";
             }
             ?>

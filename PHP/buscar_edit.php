@@ -24,8 +24,8 @@ if (isset($_GET["titulo"])) {
 
 <body>
     <div class="container">
-        <div class="header"><h2>Buscar Livro</h2></div>
         <div class="content">
+            <h2>Busque um livro para editar</h2>
             <form action="editar.php" method="get">
                 <label for="id_livro">Digite o código do livro:</label>
                 <input type="number" id="id_livro" name="id_livro" required placeholder="Ex: 1">
