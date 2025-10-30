@@ -73,3 +73,20 @@ tr {
     background-color: #e63946;
     transform: scale(1.1);
 }
+
+.mensagem {
+    background-color: #e6ffe6; 
+    color: #2e7d32;           
+    border: 1px solid #81c784;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.mensagem.erro {
+    background-color: #ffe6e6;
+    color: #c62828;
+    border: 1px solid #ef5350;
+}

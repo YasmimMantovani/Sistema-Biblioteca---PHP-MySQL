@@ -16,10 +16,12 @@ $mensagem = "";
 </head>
 <body>
     <div class="container">
-        <div class="content">             
+        <div class="content">
+            <?php if (!empty($mensagem)): ?>
+                <div class="mensagem"><?= $mensagem ?></div>
+            <?php endif; ?>       
             <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    //pega o titulo
                     $consulta = trim($_POST["titulo"]);
 
                     if($consulta == "") {
@@ -76,6 +78,9 @@ $mensagem = "";
                     }
             }
 
+            if (!empty($mensagem)){
+                echo "<div class='mensagem'> $mensagem </div>";
+            }
             ?>
             <div class="botao">
                 <a href="../HTML/index.html" class="btn">Voltar</a>
