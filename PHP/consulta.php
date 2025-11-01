@@ -22,12 +22,12 @@ $mensagem = "";
             <?php endif; ?>       
             <?php
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    $consulta = trim($_POST["titulo"]);
+                    $consulta = trim($_POST["id_livro"]);
 
                     if($consulta == "") {
                         $mensagem = "⚠️ Campo de busca vazio. Por favor, insira um título para buscar.";
                     } else {
-                        $sql = "select * from livros where titulo like '%$consulta%'";
+                        $sql = "select * from livros where id_livro like '%$consulta%'";
                         $resultado = $conexao->query($sql);
 
                         if($resultado && $resultado->num_rows > 0) {
@@ -73,7 +73,7 @@ $mensagem = "";
                             echo "</table>";
 
                         } else {
-                            $mensagem = "❌ Nenhum livro encontrado com esse título.";
+                            $mensagem = "❌ Nenhum livro encontrado com esse ID.";
                         }
                     }
             }

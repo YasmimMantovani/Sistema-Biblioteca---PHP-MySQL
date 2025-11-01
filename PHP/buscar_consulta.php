@@ -3,10 +3,10 @@ include("conexao.php");
 
 $mensagem = "";
 
-if(isset($_GET["titulo"])) {
-    $titulo = $_GET["titulo"];
+if(isset($_GET["id_livro"])) {
+    $id_livro = $_GET["id_livro"];
 
-    header("Location: consulta.php?titulo = $titulo");
+    header("Location: consulta.php?id_livro = $id_livro");
     exit;
 }
 
@@ -31,8 +31,8 @@ if(isset($_GET["titulo"])) {
             <?php endif; ?>
             <h2>Busque um livro para consultar</h2>
             <form action="consulta.php" method="post">
-                <label for="titulo">Título:</label>
-                <input type="text" name="titulo" id="titulo" placeholder="Insira o título" required>
+                <label for="id_livro">ID:</label>
+                <input type="number" name="id_livro" id="id_livro" placeholder="Insira o ID" required>
                 <br><br>
 
                 <div class="botao">
