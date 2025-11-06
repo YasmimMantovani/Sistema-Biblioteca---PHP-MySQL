@@ -12,7 +12,7 @@ $mensagem = "";
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/tabela2.css">
   <link rel="shortcut icon" href="../img/pngegg.png">
-  <title>Resultado da Consulta</title>
+  <title>Consulta individual</title>
 </head>
 <body>
     <div class="container">
